@@ -42,7 +42,7 @@ Getting started with ADMET-Stack is straightforward:
 
     ```bash
     conda env create -f environment.yml
-    conda activate ADMET-stack
+    conda activate ADMET-Stack
     ```
 
 3.  **Launch JupyterLab:**
