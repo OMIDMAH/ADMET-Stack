@@ -29,7 +29,7 @@ ADMET-Stack/
 
 ## Installation
 
-Getting started with HLP-Stack is straightforward:
+Getting started with ADMET-Stack is straightforward:
 
 1.  **Clone the repository:**
 
@@ -42,7 +42,7 @@ Getting started with HLP-Stack is straightforward:
 
     ```bash
     conda env create -f environment.yml
-    conda activate hlp-stack
+    conda activate ADMET-stack
     ```
 
 3.  **Launch JupyterLab:**
