@@ -6,6 +6,18 @@
 
 ---
 
+## Original Research Publication
+
+**ADMET-Stack is the research project associated with the following original scientific publication, which presents the framework, methodology, comprehensive benchmarking, and principal findings of this work.**
+
+**Article Title:** ADMET-Stack: Quantitative Guidance on How Much Representational Complexity an ADMET Endpoint Actually Requires
+
+**Original Research Article:** [Read the publication in Frontiers in Chemistry](https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2026.1991510/abstract)
+
+This article is the **primary scientific publication for the ADMET-Stack project**. The present GitHub repository provides the associated source code, datasets, molecular representations, trained models, benchmark results, and analysis scripts to support reproducibility, independent verification, and further research.
+
+---
+
 ## Overview
 
 ADMET-Stack is a controlled benchmark of **molecular representation**, not a new learning
@@ -14,18 +26,17 @@ representation, evaluating **54 combinations** of structural fingerprints, physi
 descriptors and SELFIES-derived encodings across **all 22 endpoints** of the
 [TDC ADMET Leaderboard](https://tdcommons.ai/benchmark/admet_group/overview/).
 
-Because the architecture never changes, differences in performance are attributable to the
-representation rather than to the model.
+By keeping the learning architecture fixed, the benchmark controls for architectural differences and enables a systematic assessment of how molecular representations affect predictive performance.
 
-## Main contributions
+## Main Contributions
 
 1. **A representation-controlled benchmark.** 54 representation configurations × 22 endpoints
    under one fixed stacked-ensemble architecture and the official TDC scaffold splits.
-2. **A defensible default.** 217 RDKit physicochemical descriptors alone recover **94.3 %** of
-   the best achievable performance on average (median **96.4 %**), outperforming 2,363 combined
-   structural fingerprints (**93.2 %**) at roughly one eleventh of the feature count.
+2. **A defensible default.** 217 RDKit physicochemical descriptors alone recover **94.3%** of
+   the best achievable performance on average (median **96.4%**), outperforming 2,363 combined
+   structural fingerprints (**93.2%**) at roughly one eleventh of the feature count.
 3. **A quantified complexity/benefit trade-off.** Adding six further representation classes
-   lifts mean retention only to **96.2 %**, and the gain is concentrated on a small number of
+   lifts mean retention only to **96.2%**, and the gain is concentrated on a small number of
    endpoints rather than spread evenly.
 4. **Population-relative interpretation.** Predictions are converted to percentile ranks against
    **1,088** approved DrugBank compounds, so an output can be read as a position within the
