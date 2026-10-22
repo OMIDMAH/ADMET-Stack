@@ -229,62 +229,37 @@ RDKit-only retention is highly endpoint dependent:
 ### Benchmark performance
 
 
-ADMET-Stack ranked **first on 8 of 22 endpoints and within the top three on 14**, against the
-public TDC ADMET Leaderboard.
-
-| Category | Endpoint | Metric | ADMET-Stack | Best configuration | Leaderboard rank |
-|---|---|---|---|---|---|
-| Absorption | `Caco2_Wang` | MAE ↓ | 0.302 ± 0.002 | `R` | 9/24 |
-| | `HIA_Hou` | AUROC ↑ | 0.996 ± 0.001 | `M_A_E_R_EM32` | <span style="color:red"><b>1/20</b></span> |
-| | `Pgp_Broccatelli` | AUROC ↑ | 0.942 ± 0.001 | `M_A_E_R_MC` | <span style="color:red"><b>1/16</b></span> |
-| | `Bioavailability_Ma` | AUROC ↑ | 0.752 ± 0.011 | `M_A_E_S_R_MC_TI_EM32` | not ranked |
-| | `Lipophilicity_AstraZeneca` | MAE ↓ | 0.440 ± 0.001 | `M_A_E_R_EM64` | <span style="color:red"><b>1/21</b></span> |
-| | `Solubility_AqSolDB` | MAE ↓ | 0.609 ± 0.001 | `M_A_E_S_R_MC_TI_EM64` | <span style="color:red"><b>1/18</b></span> |
-| Distribution | `BBB_Martins` | AUROC ↑ | 0.912 ± 0.003 | `M_A_E_R_MC_TI` | 6/26 |
-| | `PPBR_AZ` | MAE ↓ | 6.966 ± 0.011 | `M_A_E_R_MC_EM64` | <span style="color:red"><b>1/20</b></span> |
-| | `VDss_Lombardo` | Spearman ↑ | 0.643 ± 0.020 | `R` | <span style="color:blue"><b>3/19</b></span> |
-| Metabolism | `CYP3A4_Substrate` | AUROC ↑ | 0.667 ± 0.006 | `M_A_E_S_MC_EM32` | <span style="color:blue"><b>2/19</b></span> |
-| | `CYP2D6_Substrate` | AUPRC ↑ | 0.615 ± 0.010 | `M_A_E_S_MC` | 14/18 |
-| | `CYP2C9_Substrate` | AUPRC ↑ | 0.434 ± 0.026 | `M_A_E_R_MC_TI_EM64` | 5/20 |
-| | `CYP3A4_Veith` | AUPRC ↑ | 0.875 ± 0.001 | `M_A_E_S_R_MC_TI` | 9/19 |
-| | `CYP2D6_Veith` | AUPRC ↑ | 0.730 ± 0.001 | `M_A_E_R_MC` | <span style="color:blue"><b>3/19</b></span> |
-| | `CYP2C9_Veith` | AUPRC ↑ | 0.842 ± 0.001 | `M_A_E_R` | <span style="color:blue"><b>2/20</b></span> |
-| Excretion | `Half_Life_Obach` | Spearman ↑ | 0.554 ± 0.008 | `M_A_E_R_MC_TI_EM32` | 5/20 |
-| | `Clearance_Hepatocyte_AZ` | Spearman ↑ | 0.536 ± 0.004 | `M_A_E_S_TI_EM64` | <span style="color:blue"><b>2/18</b></span> |
-| | `Clearance_Microsome_AZ` | Spearman ↑ | 0.652 ± 0.004 | `M_A_E_S_R_MC_EM32` | <span style="color:red"><b>1/20</b></span> |
-| Toxicity | `LD50_Zhu` | MAE ↓ | 0.388 ± 0.000 | `M_A_E_R_MC_TI` | <span style="color:red"><b>1/22</b></span> |
-| | `hERG` | AUROC ↑ | 0.854 ± 0.002 | `MC` | 6/20 |
-| | `AMES` | AUROC ↑ | 0.936 ± 0.001 | `M_A_E_R` | <span style="color:red"><b>1/20</b></span> |
-| | `DILI` | AUROC ↑ | 0.934 ± 0.002 | `M_A_E_S_R_TI_EM32` | <span style="color:blue"><b>2/20</b></span> |
-
 
 ADMET-Stack ranked **first on 8 of 22 endpoints and within the top three on 14**, against the
 public TDC ADMET Leaderboard.
 
+**Leaderboard rank legend:** 🔴 **Rank 1 (1st place)** | 🔵 Rank 2–3 (Top 3)
+
+
 | Category | Endpoint | Metric | ADMET-Stack | Best configuration | Leaderboard rank |
 |---|---|---|---|---|---|
 | Absorption | `Caco2_Wang` | MAE ↓ | 0.302 ± 0.002 | `R` | 9/24 |
-| | `HIA_Hou` | AUROC ↑ | 0.996 ± 0.001 | `M_A_E_R_EM32` | **1/20** |
-| | `Pgp_Broccatelli` | AUROC ↑ | 0.942 ± 0.001 | `M_A_E_R_MC` | **1/16** |
+| | `HIA_Hou` | AUROC ↑ | 0.996 ± 0.001 | `M_A_E_R_EM32` | 🔴 **1/20** |
+| | `Pgp_Broccatelli` | AUROC ↑ | 0.942 ± 0.001 | `M_A_E_R_MC` | 🔴 **1/16** |
 | | `Bioavailability_Ma` | AUROC ↑ | 0.752 ± 0.011 | `M_A_E_S_R_MC_TI_EM32` | not ranked |
-| | `Lipophilicity_AstraZeneca` | MAE ↓ | 0.440 ± 0.001 | `M_A_E_R_EM64` | **1/21** |
-| | `Solubility_AqSolDB` | MAE ↓ | 0.609 ± 0.001 | `M_A_E_S_R_MC_TI_EM64` | **1/18** |
+| | `Lipophilicity_AstraZeneca` | MAE ↓ | 0.440 ± 0.001 | `M_A_E_R_EM64` | 🔴 **1/21** |
+| | `Solubility_AqSolDB` | MAE ↓ | 0.609 ± 0.001 | `M_A_E_S_R_MC_TI_EM64` | 🔴 **1/18** |
 | Distribution | `BBB_Martins` | AUROC ↑ | 0.912 ± 0.003 | `M_A_E_R_MC_TI` | 6/26 |
-| | `PPBR_AZ` | MAE ↓ | 6.966 ± 0.011 | `M_A_E_R_MC_EM64` | **1/20** |
-| | `VDss_Lombardo` | Spearman ↑ | 0.643 ± 0.020 | `R` | 3/19 |
-| Metabolism | `CYP3A4_Substrate` | AUROC ↑ | 0.667 ± 0.006 | `M_A_E_S_MC_EM32` | 2/19 |
+| | `PPBR_AZ` | MAE ↓ | 6.966 ± 0.011 | `M_A_E_R_MC_EM64` | 🔴 **1/20** |
+| | `VDss_Lombardo` | Spearman ↑ | 0.643 ± 0.020 | `R` | 🔵 3/19 |
+| Metabolism | `CYP3A4_Substrate` | AUROC ↑ | 0.667 ± 0.006 | `M_A_E_S_MC_EM32` | 🔵 2/19 |
 | | `CYP2D6_Substrate` | AUPRC ↑ | 0.615 ± 0.010 | `M_A_E_S_MC` | 14/18 |
 | | `CYP2C9_Substrate` | AUPRC ↑ | 0.434 ± 0.026 | `M_A_E_R_MC_TI_EM64` | 5/20 |
 | | `CYP3A4_Veith` | AUPRC ↑ | 0.875 ± 0.001 | `M_A_E_S_R_MC_TI` | 9/19 |
-| | `CYP2D6_Veith` | AUPRC ↑ | 0.730 ± 0.001 | `M_A_E_R_MC` | 3/19 |
-| | `CYP2C9_Veith` | AUPRC ↑ | 0.842 ± 0.001 | `M_A_E_R` | 2/20 |
+| | `CYP2D6_Veith` | AUPRC ↑ | 0.730 ± 0.001 | `M_A_E_R_MC` | 🔵 3/19 |
+| | `CYP2C9_Veith` | AUPRC ↑ | 0.842 ± 0.001 | `M_A_E_R` | 🔵 2/20 |
 | Excretion | `Half_Life_Obach` | Spearman ↑ | 0.554 ± 0.008 | `M_A_E_R_MC_TI_EM32` | 5/20 |
-| | `Clearance_Hepatocyte_AZ` | Spearman ↑ | 0.536 ± 0.004 | `M_A_E_S_TI_EM64` | 2/18 |
-| | `Clearance_Microsome_AZ` | Spearman ↑ | 0.652 ± 0.004 | `M_A_E_S_R_MC_EM32` | **1/20** |
-| Toxicity | `LD50_Zhu` | MAE ↓ | 0.388 ± 0.000 | `M_A_E_R_MC_TI` | **1/22** |
+| | `Clearance_Hepatocyte_AZ` | Spearman ↑ | 0.536 ± 0.004 | `M_A_E_S_TI_EM64` | 🔵 2/18 |
+| | `Clearance_Microsome_AZ` | Spearman ↑ | 0.652 ± 0.004 | `M_A_E_S_R_MC_EM32` | 🔴 **1/20** |
+| Toxicity | `LD50_Zhu` | MAE ↓ | 0.388 ± 0.000 | `M_A_E_R_MC_TI` | 🔴 **1/22** |
 | | `hERG` | AUROC ↑ | 0.854 ± 0.002 | `MC` | 6/20 |
-| | `AMES` | AUROC ↑ | 0.936 ± 0.001 | `M_A_E_R` | **1/20** |
-| | `DILI` | AUROC ↑ | 0.934 ± 0.002 | `M_A_E_S_R_TI_EM32` | 2/20 |
+| | `AMES` | AUROC ↑ | 0.936 ± 0.001 | `M_A_E_R` | 🔴 **1/20** |
+| | `DILI` | AUROC ↑ | 0.934 ± 0.002 | `M_A_E_S_R_TI_EM32` | 🔵 2/20 |
 
 Ranks are computed against the public leaderboard as `1 + (entries strictly better) + (entries
 tied)`. `Bioavailability_Ma` scores below every listed entry and is therefore not assigned a rank.
