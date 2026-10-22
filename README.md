@@ -24,7 +24,7 @@ descriptors and SELFIES-derived encodings across **all 22 endpoints** of the
 
 By keeping the learning architecture fixed, the benchmark controls for architectural differences and enables a systematic assessment of how molecular representations affect predictive performance.
 
-## Main Contributions
+## Main contributions
 
 1. **A representation-controlled benchmark.** 54 representation configurations × 22 endpoints
    under one fixed stacked-ensemble architecture and the official TDC scaffold splits.
