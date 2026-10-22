@@ -4,8 +4,6 @@
 
 ![ADMET-Stack architecture](figures/fig02_architecture.png)
 
----
-
 ## Original Research Publication
 
 **ADMET-Stack is the research project associated with the following original scientific publication, which presents the framework, methodology, comprehensive benchmarking, and principal findings of this work.**
@@ -15,8 +13,6 @@
 **Original Research Article:** [Read the publication in Frontiers in Chemistry](https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2026.1991510/abstract)
 
 This article is the **primary scientific publication for the ADMET-Stack project**. The present GitHub repository provides the associated source code, datasets, molecular representations, trained models, benchmark results, and analysis scripts to support reproducibility, independent verification, and further research.
-
----
 
 ## Overview
 
