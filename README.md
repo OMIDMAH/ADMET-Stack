@@ -264,6 +264,8 @@ public TDC ADMET Leaderboard.
 Ranks are computed against the public leaderboard as `1 + (entries strictly better) + (entries
 tied)`. `Bioavailability_Ma` scores below every listed entry and is therefore not assigned a rank.
 
+### Comparison against four leaderboard baselines
+
 ![ADMET-Stack](https://img.shields.io/badge/-ADMET--Stack-7dcbb2?style=flat-square)
 ![ADMET-AI](https://img.shields.io/badge/-ADMET--AI-fc9e79?style=flat-square)
 ![ADMETrix](https://img.shields.io/badge/-ADMETrix-9eaed2?style=flat-square)
@@ -275,7 +277,6 @@ tied)`. `Bioavailability_Ma` scores below every listed entry and is therefore no
 ![Head-to-head comparison, AUROC](figures/fig06c_auroc.png)
 ![Head-to-head comparison, AUPRC](figures/fig06d_auprc.png)
 
-### Comparison against four leaderboard baselines
 
 ADMET-AI, ADMETrix, MiniMol and MapLight+GNN. Across **87 available pairwise comparisons**
 (22 endpoints × 4 baselines, minus `Pgp_Broccatelli` for MiniMol, which has no leaderboard
